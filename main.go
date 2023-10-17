@@ -1,9 +1,19 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+)
 
 func main() {
-	fmt.Println("Hello world")
-	message := "Hi bashnya :)"
-	fmt.Println(message)
+	fmt.Printf("My favourite number is %d", rand.Int())
+
+}
+
+func EvenOrOdd(number int) string {
+	if number%2 == 0 {
+		return "Even"
+	} else {
+		return "Odd"
+	}
 }
